@@ -1,16 +1,15 @@
 ---
-import ThemeManager from "./ThemeManager.astro";
-import ThemeSelect from "./ThemeSelect.astro";
+
 ---
 
 <html lang="en">
   <head>
     <!-- ... -->
-    <ThemeManager defaultTheme="auto" />
+    <!-- ChatGPT recommend remove <ThemeManager defaultTheme="auto" />-->
   </head>
   <main>
     <body>
-      <ThemeSelect />
+      <!-- ChatGPT recommend remove <ThemeSelect />-->
       <slot />
     </body>
   </main>
