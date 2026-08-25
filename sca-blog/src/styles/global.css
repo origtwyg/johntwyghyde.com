@@ -4,28 +4,59 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-:root {
+:root,
+:root[data-theme="light"] {
 	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
+	--accent-hover: #000d8a;
+
+	--page-background: #ffffff;
+	--surface-background: #ffffff;
+	--text-primary: #0f1219;
+	--text-secondary: #222939;
+	--text-muted: #60739f;
+	--border-color: #d8dde6;
+	--border-strong: #60739f;
+	--code-background: #e5e9f0;
+	--page-gradient-start: rgba(229, 233, 240, 50%);
+	--header-shadow: 0 2px 8px rgba(15, 18, 25, 5%);
 	--box-shadow:
-		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+		0 2px 6px rgba(96, 115, 159, 25%),
+		0 8px 24px rgba(96, 115, 159, 33%),
+		0 16px 32px rgba(96, 115, 159, 33%);
 }
+
+:root[data-theme="dark"] {
+	--accent: #9aa8ff;
+	--accent-hover: #c1c9ff;
+
+	--page-background: #12151c;
+	--surface-background: #171b24;
+	--text-primary: #ebeef5;
+	--text-secondary: #d7dce6;
+	--text-muted: #a0aabe;
+	--border-color: #343c49;
+	--border-strong: #59677c;
+	--code-background: #323844;
+	--page-gradient-start: rgba(34, 41, 57, 65%);
+	--header-shadow: 0 2px 8px rgba(0, 0, 0, 25%);
+	--box-shadow:
+		0 2px 6px rgba(0, 0, 0, 25%),
+		0 8px 24px rgba(0, 0, 0, 30%),
+		0 16px 32px rgba(0, 0, 0, 35%);
+}
+
 body {
 	font-family: var(--font-atkinson);
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: var(--page-background);
+	background-color: var(--page-background);
+	background-image: linear-gradient(var(--page-gradient-start), var(--page-background));
+	background-repeat: no-repeat;
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
+	color: var(--text-secondary);
 	font-size: 20px;
 	line-height: 1.7;
 }
@@ -42,7 +73,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: var(--text-primary);
 	line-height: 1.2;
 }
 h1 {
@@ -68,7 +99,7 @@ a {
 	color: var(--accent);
 }
 a:hover {
-	color: var(--accent);
+	color: var(--accent-hover);
 }
 p {
 	margin-bottom: 1em;
@@ -76,11 +107,19 @@ p {
 .prose p {
 	margin-bottom: 2em;
 }
+textarea,
+input,
+select {
+	color: var(--text-primary);
+	background-color: var(--surface-background);
+	border-color: var(--border-strong);
+}
 textarea {
 	width: 100%;
 	font-size: 16px;
 }
-input {
+input,
+select {
 	font-size: 16px;
 }
 table {
@@ -93,7 +132,8 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
+	color: var(--text-primary);
+	background-color: var(--code-background);
 	border-radius: 2px;
 }
 pre {
@@ -111,7 +151,7 @@ blockquote {
 }
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+	border-top: 1px solid var(--border-color);
 }
 @media (max-width: 720px) {
 	body {
