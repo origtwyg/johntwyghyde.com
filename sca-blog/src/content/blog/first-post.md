@@ -5,6 +5,7 @@ pubDate: 'Sept 2026'
 heroImage: '../../assets/Andro.jpg'
 ---
 
+Background if you're not familiar with the SCA. Start two paragraphs down about the piece itself.
 For those of us in the Society for Creative Anachronism (SCA) we often celebration people's achievements within the various activities that we do. The highest levels of achievements are known as elevations into Peerage. This recognition takes many years to achieve and is awarded through polling of others in that activity and review of the participants efforts. 
 
 When these elevations happen there is a number of items which have traditionally come to be awarded. For example, a white belt for the peerage of chivalry, or a set of archer's bracers (forearm protection) for the archers obtaining the Order of the Mark peerage. These regalia items are bestowed to the participant in our mock court, and often takes months of preparation. The elevation includes something called a vigil where the participant sits to receive vistors throughout the day. People's vigils often happen in a tent for privacy and those tents are elaborately decorated.
