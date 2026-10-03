@@ -2,7 +2,7 @@
 title: 'Bust of Andromedus Leonidas'
 description: 'Roman bust in plaster of Sir Andromedus'
 pubDate: 'Sept 2026'
-heroImage: '/workspaces/johntwyghyde.com/sca-blog/src/assets/blog-placeholder-1.jpg'
+heroImage: '../../assets/Maquette_pic.jpg'
 ---
 
 <h2 id="intro">Intro</h2>
